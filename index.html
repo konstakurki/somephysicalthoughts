@@ -1,1 +1,108 @@
-MOi maailma
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Some physical thoughts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/fonts/Typewriter/cmun-typewriter.css">
+    <link href='http://fonts.googleapis.com/css?family=Fjord+One' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="/css/skeleton.css">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+    <script type="text/javascript">
+      function lightswitch() {
+        var name = document.getElementsByTagName("body")[0].className;
+        document.getElementsByTagName("body")[0].className = (name === "day") ?
+          "night" : "day";
+      }
+    </script>
+</head>
+
+\[\newcommand{\coa}{{\color{blue}\bullet}}\]
+
+\[\newcommand{\dd}{\mathrm{d}}\]
+\[\newcommand{\puoli}{\frac{1}{2}}\]
+\[\renewcommand{\Re}{\mathrm{Re}}\]
+\[\renewcommand{\Im}{\mathrm{Im}}\]
+
+<body class="day">
+  <div id="lightswitch">
+    <a href="javascript:void(0)" onclick="lightswitch()"><i class="fa fa-lightbulb-o"></i></a>
+  </div>
+<div class="container" id="content">
+  <section class="header">
+	<h1 class="title">Some physical thoughts</h1>
+  </section>
+<p><em>Updated on March 28, 2016</em></p>
+
+<p>This progressing book will feature some fresh, unusually concrete points of view on issues of theoretical physics often found too abstract and remote to grasp by students. The book is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a>. See <a href="http://konstakurki.co/">konstakurki.co</a> for contact and other information about the author. The site/book source can be found <a href="https://github.com/konstakurki/somephysicalthoughts/">here</a>.</p>
+
+<h2>Guitar string theory</h2>
+
+<p>Field theory, were it quantum or classical, is not easy to grasp. Fields and their Lagrangians seem so abstract. You cannot touch the field, you can't even imagine what it would be like if you could. But this is not true&mdash;you can touch a complex scalar field in two-dimensional emergent spacetime in a very, very concrete way. Depending on your interests, you might be doing it every day.</p>
+
+<p>I'm talking about playing guitar. Guitar string is a simple mechanical system which consists of a long, thin, strained piece of metal rigidly clamped at its ends. The guitarists hits the string with a pick causing it to vibrate.</p>
+
+<p>To determine the configuration of the string we simply need to tell how much the string has displaced from the nonvibrating rest configuration at every point along its length. The string may be displaced in the two transverse directions and also along the length of the string. If you've played a guitar, you know it is very much easier to displace the string transversely than longitudinally. The reason is simple: longitudinal displacement stretches the string much more than transverse displacements. So, it doesn't sound not very bad idea to neglect the longitudinal displacements. I'll do that for simplicity.</p>
+
+<p>So we have two transverse displacements at every point along the length of the string. The displacement is essentially a two-dimensional vector, the zero vector being no displacement at all. There's a tempting option for such a vector space: the complex plane. It's probably not yet clear, but the algebraic properties of complex numbers will turn out to be very useful.</p>
+
+<p>We therefore determine the configuration by attaching a complex number \(\varphi(x)\) to every point \(x\) along the string. You can think of \(x\) as a label, an index or a variable&mdash;it doesn't make a difference.</p>
+
+<p>And here we have it! A complex scalar field. It's not obvious that the word &ldquo;scalar&rdquo; maker sense, but later we'll see it does.</p>
+
+<p>How the string moves? The string consists of many small particles which we can think of being attached to each other with small springs, so it should not be too difficult to figure out the motion. It's essentially very elementary mechanics.</p>
+
+<p>In field theory and almost any other theory the most easy way to describe the dynamics is a Lagrangian. For a simple situations it is just the difference of kinetic and potential energies. Our situation here is a simple one.</p>
+
+<p>So, let's calculate the kinetic energy \(T\) first. It's clearly the sum, or integral since the string is somewhat continuous a system, of the kinetic energies \(\dd T(x)\) of all small pieces of the string. From elementary mechanics we know that for each small piece of mass \(\dd m\) we have</p>
+
+<p>\[\dd T=\puoli\dd m\left(\Re\dot{\varphi}^2+\Im\dot{\varphi}^2\right)=\puoli\dd m\dot{\varphi}^*\dot{\varphi}.\]</p>
+
+<p>Using complex numbers simplify things! If we write \(\dd m=\dd x\,\mu\) where \(\mu\) is the mass density of the string, we can think of</p>
+
+<p>\[\dd T=\dd x\puoli\mu\dot{\varphi}^*\dot{\varphi}\]</p>
+
+<p>as \(\dd x\) times the density of the kinetic energy. When talking about a guitar string, energy density is more useful a concept than the total energy.</p>
+
+<p>Now, the potential energy density. The potential energy \(V\) comes from the lenghtening of the string. Every small piece contribute. The change in length attributed to a small piece \(\dd x\) is clearly the hypotenusa of the triangle for kuva pitää saaha tähän joo. It is second order in djfldsjsdlk \(\dd\varphi\). So we have</p>
+
+<p>\[\dd U=\puoli\kappa\dd\varphi^*\dd\varphi=\dd x\puoli\kappa\varphi'^*\varphi'\]</p>
+
+<p>in which \(\varphi'(x)\) is the derivative with respect to \(x\).</p>
+
+<p>At this point it is useful to choose the units of time and length so that \(\mu=\kappa=1\) so we do not need to drage those letters in equations.</p>
+
+<p>Now, let's subtract the potential energy density from the kinetic energy density. We get</p>
+
+<p>\[\mathcal{L}=\puoli|\dot{\varphi}|^2-\puoli|\varphi'|^2.\]</p>
+
+<p>This is the Lagrangian density, or just Lagrangian of the guitar string. If you think of it, it's the Lagrangian of a massless complex scalar field in 1+1-dimensional spacetime.</p>
+
+
+<!--
+
+We have</p>
+
+<p>\[T=\int\dd\,T.\]</p>
+
+<h2>Events</h2>
+
+<h2>Shape</h2>
+
+<h2>Rindler and Schwartschild</h2>
+
+<h2>A geodesic to quantum</h2>
+
+<h2>Reasoning for Lagrangian</h2>
+
+-->
+
+<hr>
+<p>Copyright &copy; (2016) Konsta Kurki</p>
+<p>This book is licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+</div>
+</body>
+</html>
