@@ -86,11 +86,68 @@
 
 We have</p>
 
-<p>\[T=\int\dd\,T.\]</p>
+<p>\[T=\int\dd\,T.\]</p>-->
 
 <h2>Events</h2>
 
-<h2>Shape</h2>
+<p>From birth to death we like to parse our lives in terms of events. This is a useful point of view also in physics. Like usually, we make some idealisations. We consider only events that are short and take place in a small spatial region so that we can more or less unambiguously say when and where they happened. In short, we only consider idealized point events.</p>
+
+<p>When we have a set of events, for example all chess matches played in 2015, we can think of what what relations and structure the set possess. The most obvious is causality. In a chess tournament we have two matches and then a third in which the winners of the first two play against each other. The first two matches are causes of the third. Most of the chess matches played during the year are not in any obvious causal relation to each other. It seems that the causal relation is always directed; if \(A\) is a cause of \(B\), then \(B\) is not a cause of \(A\). We have a feeling that there's some kind of <em>arrow of time</em> in the universe.</p>
+
+<p>Some interesting physical questions arise. If we have any two events, can we always say that the arrow of time points from the first to the second or from the second to the first? Or are there situations in which there's no arrow between two events at all, not even in principle? You could anticipate that we can always take a clock and check which event occurred first, and then assume that the arrow points from the first to the latter, but this is not how things really are. Another question is, could there be a loop&mdash;so-called closed timelike loop&mdash;of events in which you follow arrows and then come back to the event in which you started? This would be a bit strange since you can not easily order things around a circle, even if the circle itself is ordered. Of course events close to each other could still be unambiguously ordered by just ignoring the rest of the circle.</p>
+
+<p>Some of these questions can be given good answers. To get there we must consider the set of all point events, a thing called spacetime, in deeper detail. To label a point event, or just an event, or a point in spacetime, we can for example say when and where it happened, provided we know what we mean by those concepts. In some cases we can use the Greenwich time, longitudes and latitudes, and the height from sea level. In other words, we need four numbers.</p>
+
+<p>You can use other ways to attach numbers to events, but you always need four of them. This is somewhat intuitive a thing: there's four directions in spacetime, the past-future, left-right, down-up and back-forward directions. Spacetime is four-dimensional. This is an obvious empirical fact. The past-future direction seems fundamentally different to the three other directions. This suggest that spacetime would be good to split in space and time, but actually it is better to think of them together. We'll see why.</p>
+
+<p>If you think of the life of a human being, it can be thought of consisting very many consecutive events. When you put those events in spacetime, you get a line. That line is called the worldline of the human being. You can draw a world line for any material object, were it living or dead.</p>
+
+<p>Could we measure the length of a world line? Easily! If it is a world line of a human being, you can measure the length by counting heartbeats. The whole worldine of a person who lives old is something like three billion heartbeats long.</p>
+
+<p>Of course heart is not a perfect clock. It's pace changes with physical strain. If you want a better clock, you can use your cell phone's clock. They are very good nowadays. It doesn't matter which cell phone you use; they're all identical. This is a remarkable fact: there exist some kind of fundamental rhythm which all good clocks agree with.</p>
+
+<p>There's a caveat here. If you take all people on Earth and their cell phones, they all definitely agree about time. Looks like the length of the worldline is somewhat independent of the shape of the worldline itself. This is not completely true. If you think of it, people don't move fast with respect to each other, which means that their world lines are somewhat parallel in spacetime. To say this there must be some absolute notion of &ldquo;fast&rdquo;, which we will soon discover.</p>
+
+<p>Spacetime forms a basis for very general theorizing in physics. We should seek local, general laws of nature which hold for every event in spacetime. In philosophy there's a principle called <em>Occam's Razor</em>. It means that it's good to assume that reality is as simple as you can imagine. In physics the same principle usally are casted in a form like <em>There's a lot of symmetry in the world.</em> What symmetry we expect of spacetime and its local physical laws?</p>
+
+<p>The first thing which comes to mind is that it doesn't matter when or where an event takes place. The laws are the same for each event&mdash;sounds obvious. It's said that spacetime is homogeneous. Another obvious thing is that spatial direction does not matter. You can turn on your heels and the laws seem the same. If you turn your head upside down, you see some changes, but surely you understand that it is because of the conditions here on Earth. In space there's no &ldquo;upside down&rdquo;. Among other things the lengths of worldlines remain untouched by these operations.</p>
+
+<p>In contrast, consider scaling. Zooming in and out, both space and time, if you made the distinction in your head. Now things definitely do not stay as before: heartbeat changes and also the lengths of worldlines. This is why scale models seem unrealistic. Every scale has its own characteristic phenomena.</p>
+
+<p>Let's set up a Cartesian coordinate system \(x, y, z\) for space, and a clock \(t\). Changing direction means rotation in the \(x\)-\(y\), \(y\)-\(z\) and \(z\)-\(x\) planes. What about \(x\)-\(t\), \(y\)-\(t\) and \(z\)-\(t\) planes? If you rotate ninety degrees in for example the \(x\)-\(t\) plane, then the time direction becomes the \(x\)-direction and vice versa. Clearly things won't stay as before.</p>
+
+<p>However, we have the Galilean principle of relativity. It says that if you change your velocity, things stay as before. If you watch worldlines in spacetime, changing velocity tilts them! It's a bit like rotation, but there's differences. At least you cannot &ldquo;rotate&rdquo; as much as ninety degrees.</p>
+
+<p>So can we survive this? Could we find something a bit like ordinary rotations that would work in planes containing \(t\)? The answer that we can, but it is not obvious. There are two routes from which to choose: the usual textbook route in which some empirical arguments are used to deduce these new rotations. The reasoning always has some gaps, at least it seems to me so. Another option is to know a bit of math and try some generalizations. You need to know some math but the reasoning is cleaner. Let me take this road here.</p>
+
+<p>So, how to change the ordinary rotation? There is actually an obvious, at least in hindsight, way to do it. It goes like this: <em>Change the real rotation angle to an imaginary one.</em> The sine and cosine in the rotation matrix turn into hyperbolic sine and cosine. The parameter space for ordinary rotation is a circle; here it is the real line. There's a maximum amount of tilting you can get by setting the imaginary rotation angle to infinity. Tilt in \(x\)-\(t\) plane is velocity, so the maximum tilting fixes a velocity scale! We can now absolutely say which is fast and which is slow. If we consider only slowly moving people and particles and small imaginary angles, which means small tilting, the hyperbolic rotation essentially changes only the \(x\) coordinate just like a Galilean transformation does. We clearly might be on the right track.</p>
+
+<p>There's also another way to do this. If you rotate in the \(x\)-\(y\) plane around the origin, according to the Pythagorean theorem the number \(x^2+y^2\) stays unchanged. Here we can do another equally simple thing: change the plus to a minus! So we change spacetime in such a way that \(x^2-t^2\) stays unchanged. Observe that a worldline for which it holds that \(x=t\) remains unchanged. Again an absolute velocity has arisen!</p>
+
+</p>We can combine our ordinary rotations and these new rotation-like transformations by stating that</p>
+
+<p>\[t^2-x^2-y^2-z^2\]</p>
+
+<p>must remain unchanged. How simple and elegant! <code>:)</code> These two ways are the only ways to change the rotations I know of. But the truly remarkable thing is that <em>they are the same thing.</em> That's right, changing real angle to imaginary is equivalent to changing a plus to a minus! So there's only one way to do this. The resulting transformations are called Lorentz transformations.</p>
+
+<p>So we assume that spacetime is homogeneous and is symmetric under three rotations and three Lorentz boosts. This means that lentght of a worldline must stay unchanged in a Lorentz boost. But we saw that it was 
+<p>\[t^2-x^2-y^2-z^2\]</p>
+
+<p>which was invariant in a Lorentz transformation. If \(x=y=z\equiv0\), it is just the length of a worldline of an object at the origin. So, in spacetime distance is measured like in an Euclidean space but with one (or three) minus signs in the formula for calculating distance! Because of this spacetime is said to pseudo-euclidean manifold.</p>
+
+<p>Now it is clear that the shape of the path contributes to its length, not only its end points. This resolves the twin paradox and leads to time dilation, length contraction and other special relativistic effects discussed in every textbook on relativity.</p>
+
+
+
+
+
+
+
+
+
+
+
+<!--<h2>Shape</h2>
 
 <h2>Rindler and Schwartschild</h2>
 
